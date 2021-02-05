@@ -23,7 +23,7 @@
 </head>
 <body>
   <div id="page-header">
-    <div id="page-header-logo" class="btfs-logo">&nbsp;</div>
+    <div id="page-header-logo" class="ipfs-logo">&nbsp;</div>
     <div id="page-header-menu">
       <div class="menu-item-wide"><a href="https://btfs.io" target="_blank" rel="noopener noreferrer">About BTFS</a></div>
       <div class="menu-item-wide"><a href="https://docs.btfs.io/docs/btfs-demo#install-btfs" target="_blank" rel="noopener noreferrer">Install BTFS</a></div>
@@ -48,7 +48,7 @@
           {{ end }}
         </strong>
         {{ if .Hash }}
-        <div class="btfs-hash">
+        <div class="ipfs-hash">
           {{ .Hash }}
         </div>
         {{ end }}
@@ -63,7 +63,7 @@
     <table>
       <tr>
         <td class="type-icon">
-          <div class="btfs-_blank">&nbsp;</div>
+          <div class="ipfs-_blank">&nbsp;</div>
         </td>
         <td>
           <a href="{{.BackLink | urlEscape}}">..</a>
@@ -81,7 +81,7 @@
         </td>
         <td class="no-linebreak">
           {{ if .Hash }}
-          <a class="btfs-hash" href="{{ $root.GatewayURL }}/btfs/{{ .Hash | urlEscape }}">
+            <a class="btfs-hash" href="{{ $root.GatewayURL }}/btfs/{{ .Hash | urlEscape }}">
             {{ .ShortHash }}
           </a>
           {{ end }}
